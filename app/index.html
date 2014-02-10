@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="phonecatApp">
+<html lang="en" ng-app="quokkaApp">
 <head>
   <meta charset="utf-8">
   <title>Google Phone Gallery</title>
@@ -8,7 +8,7 @@
   <script src="lib/angular/angular.js"></script>
   <script src="js/controllers.js"></script>
 </head>
-<body ng-controller="PhoneListCtrl">
+<body ng-controller="QuokkaListCtrl">
 
   <div class="container-fluid">
     <div class="row-fluid">
@@ -16,15 +16,19 @@
         <!--Sidebar content-->
 
         Search: <input ng-model="query">
+        Sort by: 
+        <select ng-model="orderProp">
+          <option value="name">Name</option>
+          <option value="crime">Crime</option>
+        </select>
 
-      </div>
       <div class="span10">
         <!--Body content-->
 
-        <ul class="phones">
-          <li ng-repeat="phone in phones | filter:query">
-            {{phone.name}}
-            <p>{{phone.snippet}}</p>
+        <ul class="quokkas">
+          <li ng-repeat="quokka in quokkas | filter:query">
+            {{quokka.name}}
+            <p>{{quokka.snippet}}</p>
           </li>
         </ul>
 

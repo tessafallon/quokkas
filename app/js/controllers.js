@@ -2,15 +2,18 @@
 
 /* Controllers */
 
-var phonecatApp = angular.module('phonecatApp', []);
+var quokkaApp = angular.module('quokkaApp', []);
 
-phonecatApp.controller('PhoneListCtrl', function($scope) {
-  $scope.phones = [
-    {'name': 'Nexus S',
-     'snippet': 'Fast just got faster with Nexus S.'},
-    {'name': 'Motorola XOOM™ with Wi-Fi',
-     'snippet': 'The Next, Next Generation tablet.'},
-    {'name': 'MOTOROLA XOOM™',
-     'snippet': 'The Next, Next Generation tablet.'}
+quokkaApp.controller('QuokkaListCtrl', function($scope) {
+  $scope.quokkas = [
+    {'name': 'Fuzzy',
+     'crime': 'Adorable larceny!',
+     'snippet': 'Fuzzy likes to eat leaves, rob banks'},
+    {'name': 'Peaches',
+     'crime': 'Snuggly grand theft auto!',
+     'snippet': "When he isn't napping, Peaches loves stealing cars!"},
+    {'name': 'Geoffy',
+     'crime': 'The cutest assault and battery!',
+     'snippet': "It's hard to believe that this chubby little guy is a ticking time bomb of rage!"}
   ];
 });
