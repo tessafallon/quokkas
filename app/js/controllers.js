@@ -16,4 +16,6 @@ quokkaApp.controller('QuokkaListCtrl', function($scope) {
      'crime': 'The cutest assault and battery!',
      'snippet': "It's hard to believe that this chubby little guy is a ticking time bomb of rage!"}
   ];
+
+  $scope.orderProp ='crime';
 });
